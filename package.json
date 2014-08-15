@@ -1,0 +1,31 @@
+{
+  "name": "csshat-middleware-throw",
+  "title": "Throwing middleware",
+  "main": "lib/middleware.coffee",
+  "description": "This middleware just fails and throws everytime",
+  "homepage": "https://github.com/marekhrabe/middleware-throw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marekhrabe/middleware-throw"
+  },
+  "settings": {
+    "throwAsynchronously": {
+      "type": "boolean",
+      "default": false
+    },
+    "asyncDelay": {
+      "type": "select",
+      "options": ["Before timeout", "After timeout"],
+      "default": "Before timeout"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/marekhrabe/middleware-throw/issues"
+  },
+  "engines": {
+    "csshat": ">2.0.0"
+  },
+  "scripts": {
+    "test": "jasmine-node spec --coffee"
+  }
+}
